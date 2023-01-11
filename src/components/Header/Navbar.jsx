@@ -13,7 +13,7 @@ import PhotoCamera from '@mui/icons-material/PhotoCamera';
 import { Link } from 'react-router-dom';
 
 
-const pages = ['Home', 'Gallery'];
+const pages = ['Gallery', 'About'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -81,7 +81,7 @@ function ResponsiveAppBar() {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Link
-                    to={page === 'Home' ? '/' : `/${page}`}
+                    to={page === 'Gallery' ? '/' : `/${page}`}
                     style={{ textDecoration: 'none' }}
                     key={page}
                   >
@@ -113,7 +113,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Link
-                to={page === 'Home' ? '/' : `/${page}`}
+                to={page === 'Gallery' ? '/' : `/${page}`}
                 style={{ textDecoration: 'none' }}
                 key={page}
               >

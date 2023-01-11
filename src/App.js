@@ -1,6 +1,6 @@
 import Navbar from './components/Header/Navbar';
-import HomeDisplay from './pages/Home/HomeDisplay';
-import GalleryDisplay from './pages/Gallery/GalleryDisplay'
+import Gallery from './pages/Gallery';
+import About from './pages/About'
 import { Container } from '@mui/system';
 import { ThemeProvider } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';
@@ -15,8 +15,8 @@ function App() {
         <Container maxWidth={false} disableGutters >
           <Navbar />
           <Routes>
-            <Route index element={<HomeDisplay />} />
-            <Route path='/gallery' element={<GalleryDisplay />} />
+            <Route index element={<Gallery />} />
+            <Route path='/about' element={<About />} />
           </Routes>
         </Container>
       </Router>
