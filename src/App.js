@@ -6,6 +6,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import theme from './theme'
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route index element={<Gallery />} />
             <Route path='/about' element={<About />} />
           </Routes>
+          <Footer />
         </Container>
       </Router>
     </ThemeProvider>

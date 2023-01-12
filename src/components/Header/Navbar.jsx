@@ -79,15 +79,15 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Link
-                    to={page === 'Gallery' ? '/' : `/${page}`}
-                    style={{ textDecoration: 'none' }}
-                    key={page}
-                  >
-                    <Typography textAlign="center">{page}</Typography>
-                  </Link>
-                </MenuItem>
+                <Link
+                  to={page === 'Gallery' ? '/' : `/${page}`}
+                  style={{ textDecoration: 'none' }}
+                  key={page}
+                >
+                  <MenuItem key={page} onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center" >{page}</Typography>
+                  </MenuItem>
+                </Link>
               ))}
             </Menu>
           </Box>
@@ -108,7 +108,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            DAG-PH
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
