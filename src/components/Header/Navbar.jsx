@@ -81,7 +81,7 @@ function ResponsiveAppBar() {
               {pages.map((page) => (
                 <Link
                   to={page === 'Gallery' ? '/' : `/${page}`}
-                  style={{ textDecoration: 'none' }}
+                  style={{ textDecoration: 'none', color: 'inherit' }}
                   key={page}
                 >
                   <MenuItem key={page} onClick={handleCloseNavMenu}>

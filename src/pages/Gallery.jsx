@@ -12,9 +12,9 @@ function Gallery() {
                     columnCount: {
                         xs: '1 !important',
                         sm: '2 !important',
-                        md: '3 !important',
+                        md: '2 !important',
                         lg: '3 !important',
-                        xl: '4 !important',
+                        xl: '3 !important',
                     },
                 }} variant="masonry" cols={3} gap={8}>
                 {data.map((photo, index) => (

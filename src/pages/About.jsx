@@ -10,7 +10,8 @@ function About() {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      height: '100vh'
+      minHeight: '100vh',
+      mt: 4
     }}>
       <Box sx={{
         textAlign: 'center',
@@ -30,12 +31,12 @@ function About() {
             alt="foto perfil"
             src={require('../assets/perfil.jpg')}
             sx={{
-              width: 120,
-              height: 120
+              width: 140,
+              height: 140
             }}
           />
         </Box>
-        <Typography mt={4} style={{
+        <Typography my={6} style={{
           textAlign: 'start',
           maxWidth: 640
         }} >Soy un apasionado por la fotografía,
@@ -48,8 +49,15 @@ function About() {
           y transmitir la energía y el ritmo de la vida urbana.
           Espero que disfrutes mi trabajo.
         </Typography>
-          <Link color="inherit" href={instagram} style={{ textDecoration: 'none' }}>
-            <InstagramIcon color='inherit' sx={{my: 2, alignSelf: 'flex-start'}}/>
+          <Link color="inherit" href={instagram} style={{ 
+            textDecoration: 'none', 
+            display: 'flex',
+            flexGrow: 1,
+            alignItems: 'center',
+            border: '1px white solid'
+            }}>
+            <Typography variant='body2' ml={2}>Haz click para acceder a mi instagram</Typography>
+            <InstagramIcon color='inherit' sx={{my: 2, mx: 2}}/>
           </Link>
       </Box>
     </Container>
